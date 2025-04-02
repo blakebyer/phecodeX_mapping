@@ -7,4 +7,4 @@ phecodeX_info <- read.csv("phecodeX_info.csv")
 phecodeX_wlabels <- inner_join(phecodeX_unrolled, phecodeX_info, by = "phecode")
 
 
-write.csv(phecodeX_wlabels, "phecodeX_wlabels.csv")
+write.csv(phecodeX_wlabels, "phecodeX_wlabels.csv", row.names = FALSE)
